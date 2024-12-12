@@ -64,10 +64,14 @@ ceph config-key set mgr/cephadm/cert_store.key.grafana_key -i grafana_keys.json
 ```bash
 ceph config-key get mgr/cephadm/cert_store.key.grafana_key
 ```
+## 4) Force cephadm cert-store to load the new content:
+```bash
+ceph mgr fail
+```
 
 ## 3) Reconfigure Grafana daemon:
 
-5) reconfig the corresponding Grafana daemon as following (use ceph orch ps to get the daemon name):
+5) Once the mgr has finish the failover, reconfig the corresponding Grafana daemon as following (use ceph orch ps to get the daemon name):
 ```bash
 ceph orch daemon reconfig <your-grafana-daemon>
 ```
