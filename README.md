@@ -15,9 +15,12 @@ MTIxMzA3MjU0M1owGjEYMBYGA1UEAwwPMTkyLjE2OC4xMDAuMTAxMIICIjANBgkq
 
 2) run the script as following (you can add as many host/cert as needed, script will update ouptut.json automatically):
 
+**Note:** in case you adding a key instead of cert use "key" argument instead of cert in the above command.
+
 ```bash
 python3 ./update_grafana_certs.py cert <your-host-nam> <your-cert-file> output.json
 ```
+
 
 3) check the output.json has the right content and update the entry on the mon-store by using the following command:
 
