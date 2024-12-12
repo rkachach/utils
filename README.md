@@ -1,3 +1,5 @@
+The _**update_grafana_certs.py**_ script is designed to help manage SSL/TLS certificates and keys for Grafana. When run for the first time, the script creates a new JSON file to store the certificates or keys. If the file already exists, the script seamlessly updates its content, ensuring that the data stays up-to-date without overwriting existing configurations.
+
 Usage steps:
 
 ## 1) Update Grafana certificates:
