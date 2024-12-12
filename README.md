@@ -65,7 +65,7 @@ ceph config-key set mgr/cephadm/cert_store.key.grafana_key -i grafana_keys.json
 ceph config-key get mgr/cephadm/cert_store.key.grafana_key
 ```
 
-## Reconfigure Grafana daemon:
+## 3) Reconfigure Grafana daemon:
 
 5) reconfig the corresponding Grafana daemon as following (use ceph orch ps to get the daemon name):
 ```bash
