@@ -53,7 +53,7 @@ DJ5/P6cx3hkiXK4/gMwQzsMnqzaU8HPxkdhgP4ui38KPcxgYsG1RP++ZlpKCy9/2
 -----END RSA PRIVATE KEY-----
 ```
 
-2) run the script as following (you can add as many host/cert as needed, script will update ouptut.json automatically):
+2) run the script as following (you can add as many host/key as needed, script will update ouptut.json automatically):
 
 ```bash
 python3 ./update_grafana_certs.py key <your-host-name> <your-cert-file> grafana_keys.json
