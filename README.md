@@ -1,6 +1,6 @@
 Usage steps:
 
-## To update certificates:
+## To update Grafana certificates:
 
 1) create a file which only contains the cert (or key) content, for example:
 
@@ -37,7 +37,7 @@ ceph config-key get mgr/cephadm/cert_store.cert.grafana_cert
 ceph orch daemon reconfig <your-grafana-daemon>
 ```
 
-## To update corresponding keys:
+## To update Grafana keys:
 
 1) create a file which only contains the cert (or key) content, for example:
 
