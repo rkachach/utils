@@ -74,7 +74,7 @@ ceph orch daemon reconfig <your-grafana-daemon>
 
 you can also run the following to reconfigure all the daemons at once:
 ```bash
-ceph orch daemon reconfig grafana
+ceph orch reconfig grafana
 ```
 
 
