@@ -25,7 +25,7 @@ def update_json(entry_type, json_file, host_name, cert):
 
 if __name__ == "__main__":
     if len(sys.argv) < 4:
-        print("Usage: python update_ceph_json.py <cert|key> <hostname> <certificate_file> <output_json_file>")
+        print("Usage: python update_grafana_cert.py <cert|key> <hostname> <certificate_file> <output_json_file>")
         sys.exit(1)
 
     entry_type = sys.argv[1]
