@@ -1,10 +1,12 @@
 The _**update_grafana_certs.py**_ script is designed to help manage SSL/TLS certificates and keys for Grafana. When run for the first time, the script creates a new JSON file to store the certificates or keys. If the file already exists, the script seamlessly updates its content, ensuring that the data stays up-to-date without overwriting existing configurations.
 
+Before proceeding, please make sure you have your Grafana certificate and key pair.
+
 Usage steps:
 
-## 1) Update Grafana certificates:
+## 1) Update Grafana certificate(s):
 
-1) create a file which only contains the cert (or key) content, for example:
+1) create a file which only contains the certificate content, for example:
 
 ```bash
 -----BEGIN CERTIFICATE-----
@@ -34,9 +36,9 @@ ceph config-key set mgr/cephadm/cert_store.cert.grafana_cert -i grafana_certs.js
 ceph config-key get mgr/cephadm/cert_store.cert.grafana_cert
 ```
 
-## 2) Update Grafana keys:
+## 2) Update Grafana key(s):
 
-1) create a file which only contains the cert (or key) content, for example:
+1) create a file which only contains the key content, for example:
 
 ```bash
 -----BEGIN RSA PRIVATE KEY-----
