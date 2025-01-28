@@ -26,7 +26,7 @@ python3 ./update_grafana_certs.py cert <your-host-name> <your-cert-file> grafana
 ```
 
 
-3) check the output.json has the right content and update the entry on the mon-store by using the following command:
+3) check the grafana_certs.json has the right content and update the entry on the mon-store by using the following command:
 ```bash
 ceph config-key set mgr/cephadm/cert_store.cert.grafana_cert -i grafana_certs.json
 ```
@@ -59,7 +59,7 @@ python3 ./update_grafana_certs.py key <your-host-name> <your-cert-file> grafana_
 ```
 
 
-3) check the output.json has the right content and update the entry on the mon-store by using the following command:
+3) check the grafana_keys.json has the right content and update the entry on the mon-store by using the following command:
 ```bash
 ceph config-key set mgr/cephadm/cert_store.key.grafana_key -i grafana_keys.json
 ```
