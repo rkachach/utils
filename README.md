@@ -1,4 +1,4 @@
-The _**update_grafana_certs.py**_ script is designed to help manage SSL/TLS certificates and keys for Grafana. When run for the first time, the script creates a new JSON file to store the certificates or keys. If the file already exists, the script seamlessly updates its content, ensuring that the data stays up-to-date without overwriting existing configurations.
+The _**update_grafana_cert.py**_ script is designed to help manage SSL/TLS certificates and keys for Grafana. When run for the first time, the script creates a new JSON file to store the certificates or keys. If the file already exists, the script seamlessly updates its content, ensuring that the data stays up-to-date without overwriting existing configurations.
 
 Before proceeding, please make sure you have your Grafana certificate and key pair.
 
@@ -22,7 +22,7 @@ MTIxMzA3MjU0M1owGjEYMBYGA1UEAwwPMTkyLjE2OC4xMDAuMTAxMIICIjANBgkq
 2) run the script as following (you can add as many host/cert as needed, script will update grafana_certs.json automatically):
 
 ```bash
-python3 ./update_grafana_certs.py cert <your-host-name> <your-cert-file> grafana_certs.json
+python3 ./update_grafana_cert.py cert <your-host-name> <your-cert-file> grafana_certs.json
 ```
 
 
@@ -55,7 +55,7 @@ DJ5/P6cx3hkiXK4/gMwQzsMnqzaU8HPxkdhgP4ui38KPcxgYsG1RP++ZlpKCy9/2
 2) run the script as following (you can add as many host/key as needed, script will update ouptut.json automatically):
 
 ```bash
-python3 ./update_grafana_certs.py key <your-host-name> <your-cert-file> grafana_keys.json
+python3 ./update_grafana_cert.py key <your-host-name> <your-cert-file> grafana_keys.json
 ```
 
 
